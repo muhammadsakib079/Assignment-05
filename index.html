@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>DevBoard</title>
+    <style type="text/tailwindcss">
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+      .discover {
+        background: linear-gradient(
+          130.7deg,
+          rgb(55, 82, 253) 0.419%,
+          rgb(108, 127, 250) 52.66%,
+          rgb(155, 168, 248) 99.733%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-slate-200">
+    <section class="max-w-[70vw] mx-auto min-h-screen poppins">
+      <!-- Navigation Bar Start -->
+      <header class="pt-5">
+        <nav class="navbar bg-base-100 shadow-sm rounded-lg p-5">
+          <div class="flex-1">
+            <!-- DevBoard Icon Start-->
+            <div class="flex items-center">
+              <img class="w-10" src="./image/logo.png" alt="" />
+              <h3 class="text-3xl font-light pl-2">
+                Dev<span class="text-3xl font-bold">Board</span>
+              </h3>
+            </div>
+            <!-- DevBoard Icon End-->
+          </div>
+          <div class="flex-none">
+            <div class="flex gap-8 items-center">
+              <!-- Task Point Box -->
+              <div
+                class="flex bg-slate-200 gap-3 items-center py-3 px-5 rounded-full"
+              >
+                <img src="./image/checkbox.png" alt="" />
+                <h3 id="task_mark" class="text-2xl font-extrabold"></h3>
+              </div>
+              <!-- Background Color Wheel Start-->
+              <div id="bg_theme" class="bg-slate-200 p-2 rounded-full">
+                <img src="./image/theme-btn.png" alt="" />
+              </div>
+              <!-- Background Color Wheel End-->
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Navigation Bar End -->
+      <main class="flex gap-1">
+        <!-- Main Section Start -->
+        <section class="w-5/6 my-4 mr-2 bg-white rounded-2xl">
+          <!-- Main.header Section Start -->
+          <section
+            class="px-4 py-6 flex gap-4 justify-between border-b-2 border-dashed border-slate-200"
+          >
+            <!-- Task Assigned sector -->
+            <div
+              class="flex items-center gap-5 min-w-60 bg-slate-200 p-6 rounded-2xl"
+            >
+              <div class="bg-white rounded-full p-4">
+                <img class="w-6" src="./image/checkbox.png" alt="" />
+              </div>
+              <div>
+                <p class="font-medium text-zinc-600">Task Assigned</p>
+                <h3 class="text-2xl font-bold">0<span id="task"></span></h3>
+              </div>
+            </div>
+            <!-- Discover Sector -->
+            <div
+              class="flex items-center gap-5 bg-slate-200 p-8 rounded-2xl discover"
+            >
+              <img class="w-18" src="./image/board.png" alt="" />
+              <h3 class="text-2xl text-white font-medium">
+                Discover Something New Today!
+              </h3>
+            </div>
+            <!-- Date Sector -->
+            <div
+              class="flex items-center gap-5 min-w-60 bg-slate-200 p-6 rounded-2xl"
+            >
+              <div class="bg-white rounded-full p-4">
+                <img class="w-6" src="./image/calender.png" alt="" />
+              </div>
+              <div>
+                <p class="text-2xl font-medium text-zinc-600">
+                  <span id="date_name"></span> ,
+                </p>
+                <h3 id="today_date" class="text-lg font-extrabold"></h3>
+              </div>
+            </div>
+          </section>
+          <!-- Main.header Section End -->
+           <!-- Task Card Section Start -->
+          <section class="grid grid-cols-3 gap-4 px-4 py-6">
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            <div class="bg-slate-200 w-auto p-4 rounded-2xl">
+               <div class="py-4 border-b-2 border-dashed border-white">
+                <div class="bg-white w-24 rounded-lg">
+                    <h5 class="text-zinc-600 text-center">
+                        ShopEase
+                    </h5>
+                   </div>
+                   <h3 class="text-2xl py-2 font-medium">Fix Mobile Button Issue </h3>
+                   <div class="bg-white rounded-lg py-2 px-1">
+                    <p class="p-2 text-sm">Debug using Chrome DevTools, check for overlapping ....</p>
+                   </div>
+               </div>
+                <div class="flex justify-between items-center pt-4">
+                    <div>
+                        <p>Deadline</p>
+                        <h5>21 March 2025</h5>
+                    </div>
+                    <div>
+                        <button class="btn text-white bg-[#3752FD]">
+                            Completed
+                        </button>
+                    </div>
+               </div>
+              </div>
+
+            
+          </section>
+          <!-- Task Card Section End -->
+        </section>
+        <!-- Main Section End -->
+        <!-- Activity Log Section Start-->
+        <section class="grid w-2/8 my-4 ml-2 bg-white rounded-2xl">
+          <section
+            class="border-b-2 py-4 max-h-32 border-dashed content-center border-slate-200"
+          >
+            <div class="flex justify-center">
+              <div class="flex items-center gap-4 pb-4">
+                <img class="w-6 h-6" src="./image/activity.png" alt="" />
+                <h3 class="text-xl font-medium">Activity Log</h3>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <button class="btn bg-[#3752FD] text-white">Clear History</button>
+            </div>
+          </section>
+          
+        </section>
+        <!-- Activity Log Section End-->
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
