@@ -43,6 +43,7 @@ document.getElementById('bg_theme')
 
 document.getElementById('btn_c_1')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -59,12 +60,19 @@ document.getElementById('btn_c_1')
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
         totalTask -= 1
+        totalTaskMark += 1
         document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task')
+            
+        }
     })
 
 
 document.getElementById('btn_c_2')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -80,11 +88,19 @@ document.getElementById('btn_c_2')
         createElement2.innerText = `You have Complete The Task Add Dark Mode at ${timeString}`;
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
-        
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task')
+            document.getElementById('removeit').remove('0')
+        }
     })
 
 document.getElementById('btn_c_3')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -100,11 +116,19 @@ document.getElementById('btn_c_3')
         createElement2.innerText = `You have Complete The Task Optimize Home page at ${timeString}`;
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
-       
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
     })
 
 document.getElementById('btn_c_4')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -120,10 +144,19 @@ document.getElementById('btn_c_4')
         createElement2.innerText = `You have Complete The Task Add new emoji 🤲 at ${timeString}`;
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
     })
 
 document.getElementById('btn_c_5')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -139,10 +172,19 @@ document.getElementById('btn_c_5')
         createElement2.innerText = `You have Complete The Task Integrate OpenAI API at ${timeString}`;
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
     })
 
 document.getElementById('btn_c_6')
     .addEventListener('click', function () {
+        alert('Board updated successfully')
         this.disabled = true;
         let historylocation = document.getElementById('history');
         let createElement1 = document.createElement('div');
@@ -158,6 +200,14 @@ document.getElementById('btn_c_6')
         createElement2.innerText = `You have Complete The Task Improve Job searching at ${timeString}`;
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
     })
 
 document.getElementById('clear_history')
@@ -165,7 +215,6 @@ document.getElementById('clear_history')
     const historyloc = document.getElementById('history');
     historyloc.innerHTML = ''
 })
-
 
 
 
