@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>DevBoard-Blogs</title>
+    <style type="text/tailwindcss">
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-200">
+    <section class="max-w-[72vw] mx-auto min-h-screen poppins">
+      <!-- Navigation Bar Start -->
+      <header class="pt-5">
+        <nav class="navbar bg-base-100 shadow-sm rounded-lg p-5">
+          <div class="flex-1">
+            <!-- DevBoard Icon Start-->
+            <div class="flex items-center">
+              <img class="w-8" src="./image/logo.png" alt="" />
+              <h3 class="text-2xl font-light pl-2">
+                Dev<span class="text-2xl font-bold">Board</span>
+              </h3>
+            </div>
+            <!-- DevBoard Icon End-->
+          </div>
+          <div class="flex-none">
+            <button id="back" class="btn bg-[#3752FD] text-white rounded-lg">
+              Back to Desk
+            </button>
+          </div>
+        </nav>
+      </header>
+      <h3 class="text-center py-6 text-3xl font-bold">Blogs</h3>
+      <main>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-gray-700 pt-4">
+              <p>There are any way to select an element. Now I write 2 method, those I was learn : <br>1. get an unique ID name & call that ID in your javascript like that: - document.getElementById('id_mane') . <br>2.Inside your element add an attribute on click & under on click attribute call function, that your will apply to that element. <br>3. Also have more option like getElementBy--className/tagName/......</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-gray-700 pt-4">
+              <p>
+                First of all I said about innerHTML. <br>
+                1. if you console.log() innerHTML than it will show content with html otherwise innerText will show only text. <br>
+                2. if you add or remove any content with html tag than you should use innerHTML otherwise content without_html_tag or only_text you should use innerText. <br>
+                3.textContent is some different, i have a bit of knowledge about that:- it will also read & write display: none; property.
+              </p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-gray-700 pt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-gray-700 pt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-gray-700 pt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+            </div>
+          </div>
+        
+        
+      </main>
+    </section>
+<script>
+  alert('I am poor in english. if any mistake, please kind. ')
+document.getElementById('back')
+.addEventListener('click', function(){
+  window.location.href = 'index.html'
+})
+</script>
+  </body>
+</html>

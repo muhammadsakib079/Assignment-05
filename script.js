@@ -216,6 +216,9 @@ document.getElementById('clear_history')
     historyloc.innerHTML = ''
 })
 
-
+document.getElementById('blog_sector')
+.addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
 
 
