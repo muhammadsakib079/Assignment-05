@@ -67,19 +67,23 @@
         <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
             <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-3: What is event delegation in the DOM?</div>
             <div class="collapse-content text-gray-700 pt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+              <p>Event delegation is those part of DOM that create an event. it have an input & output , input like click, keyup..... & output is under the function. <br> If input is given than it give outpu</p>
             </div>
           </div>
         <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
-            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-4: What is event bubbling in the DOM?</div>
             <div class="collapse-content text-gray-700 pt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+              <p>
+                Previous question I was explain what is event delegation. when you create an event than it work like a bubble. first of all it search that element like that (window-document-html-header-container-parent-child) if it find that element, than it returns its like(child-parent-container-header-html-document-window). <br> that its called event bubbling.
+              </p>
             </div>
           </div>
         <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-6">
-            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-title font-semibold border-b-2 border-dashed border-slate-200 text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</div>
             <div class="collapse-content text-gray-700 pt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis magni repellendus labore nemo provident possimus blanditiis cum vel minus consectetur molestiae quod maiores eius deleniti, nostrum cupiditate tempora esse!
+              Create : let newElement = document.createElement("div"); newElement.innerText = 'Hi, I am Sakib'; document.body.appendChild(newElement); <br>
+              Add : newElement.classList.add("btn") <br>
+              Remove : newElement.classList.remove('btn')
             </div>
           </div>
         
@@ -87,7 +91,7 @@
       </main>
     </section>
 <script>
-  alert('I am poor in english. if any mistake, please kind. ')
+
 document.getElementById('back')
 .addEventListener('click', function(){
   window.location.href = 'index.html'

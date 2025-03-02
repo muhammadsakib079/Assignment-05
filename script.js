@@ -220,5 +220,3 @@ document.getElementById('blog_sector')
 .addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
-
-
